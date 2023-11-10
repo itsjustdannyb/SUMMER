@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='\styles.css')}}">
+    <title>SUMMER</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SUMMER</h1>
+        <h3>The Fastest Addition Calculator Ever!!</h3>
+
+        <form action="/summer" method="post" id="spacing">
+            <label for="num1">Enter the first number</label>
+            <br>
+            <input type="text" id="num1" name="num1">
+            <br>
+            <label for="num2">Enter the second number</label>
+            <br>
+            <input type="text" id="num2" name="num2">
+            <br>
+            <input type="submit" value="Summate!!!!!!!" class="btn">
+        </form>
+
+        <h4>The summation is {{sum}} </h4>
+    </div>
+</body>
+</html>
